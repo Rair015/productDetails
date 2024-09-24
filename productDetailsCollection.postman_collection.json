@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "4055cebb-4d16-45df-bd99-11bd55f1f5f0",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2024185"
+	},
+	"item": [
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"9fd08c71-2501-4227-95e9-b621432e00fa\",\r\n    \"storeId\": 123456,\r\n    \"customer\": {\r\n             \"customerId\":\"afc472ac-5162-4960-8a96-d4ee39195c1a\",\r\n             \"customerName\": \"Tony Stark\",\r\n             \"SSN\": \"ABCDEFGHIJ1234\",\r\n             \"date of birth\": \"1964-01-01\"\r\n     },\r\n    \"orderDate\": \"2024-01-01\",\r\n    \"orderTime\": \"12:59:59.012\",\r\n    \"notes\": \"Cupcake ipsum dolor sit amet chocolate sugar plum soufflé. I love brownie apple pie liquorice bear claw. Pudding candy gummies pastry fruitcake. Carrot cake sugar plum dessert fruitcake jujubes gummi bears. Tiramisu jelly liquorice cupcake jelly bear claw.\",\r\n    \"charges\": [\r\n        {\r\n            \"productId\": \"42604676-73cf-4389-8971-0a24df9435c1\",\r\n            \"amount\": 1234.01,\r\n            \"SKU\": \"PRO-QWE-QWE-QWE\",\r\n            \"quantity\": 100\r\n        },\r\n        {\r\n            \"productId\": \"d98dc21c-ea14-4358-a5f3-8403f7859d9d\",\r\n            \"amount\": 4321.98,\r\n            \"SKU\": \"PRO-QWE-QWE-QWE2\",\r\n            \"quantity\":  2000\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/product/305a9d1a-fe06-4199-9ecd-01caf45d8ced",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"305a9d1a-fe06-4199-9ecd-01caf45d8ced"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
